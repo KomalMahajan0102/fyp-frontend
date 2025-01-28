@@ -34,7 +34,7 @@ const PlaceOrder = ({ setShowLogin }) => {
 
     return (
         <div>
-            <div><Header setShowLogin={setShowLogin}></Header></div>
+            
             <div className="placeorder-main">
                 <form className="place-order" >
                     <div className="place-order-left">

@@ -57,8 +57,7 @@ const HomePage = ({setShowLogin}) => {
     return (
         <>
             <div className='homepage'>
-            <div className='header'>
-                    <Header setShowLogin={setShowLogin}></Header>
+            <div className='header'>                   
                     <div id='home '>
                         <div className="video-container container-fluid">
                             <video className="video-bg" src={Home.video} autoPlay loop muted></video>

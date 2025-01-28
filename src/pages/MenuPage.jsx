@@ -9,7 +9,7 @@ function MenuPage({setShowLogin}) {
   const [category, setCategory] = useState("All");
   return (
     <div className='menuPage'>
-     <Header setShowLogin={setShowLogin}></Header> 
+    
        <div className="menu-header">
        <MenuHeader></MenuHeader>
        </div> 

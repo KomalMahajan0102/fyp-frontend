@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./LoginPopup.css";
 import cross_icon from "../../assets/cross_icon.png"
 import { StoreContext } from "../../context/StoreContext";
@@ -19,7 +19,7 @@ const LoginPopup = ({ setShowLogin }) => {
     const value = event.target.value;
     setData((data) => ({ ...data, [name]: value }));
   };
-
+  
   const onLogin = async (event) => {
     event.preventDefault();
     let newUrl = url;
@@ -40,7 +40,7 @@ const LoginPopup = ({ setShowLogin }) => {
   };
   return (
     <div className="login-popup">
-      <form className="login-popup-container">
+      <form onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currentState}</h2>
           <img

@@ -6,8 +6,7 @@ import Footer from '../components/Footer/Footer'
 import Orbit from '../components/Orbit/Orbit'
 function About({setShowLogin}) {
   return (
-    <div className='about'>
-      <Header setShowLogin={setShowLogin}></Header> 
+    <div className='about'>      
        <div className="about-header">
        <AboutHeader></AboutHeader>
        </div>

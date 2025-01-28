@@ -23,9 +23,7 @@ const Cart = ({ setShowLogin }) => {
 
     return (
         <div className="cart">
-            <div>
-                <Header setShowLogin={setShowLogin}></Header>
-            </div>
+            
             <div className="cart-items">
                 <div className="cart-items-title">
                     <p>Items</p>

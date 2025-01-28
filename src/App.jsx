@@ -13,6 +13,7 @@ import LoginPopup from './components/LoginPopup/LoginPopup';
 import Header from './components/Header/Header';
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import './App.css'
+import { ToastContainer } from 'react-toastify';
 function App() {
   const [count, setCount] = useState(0)
   const [showLogin,setShowLogin]=useState(false)
@@ -22,6 +23,9 @@ function App() {
       <BrowserRouter>
         <StoreContextProvider>
           {showLogin?<LoginPopup setShowLogin={setShowLogin}></LoginPopup>:<></>}
+          
+          <Header setShowLogin={setShowLogin}></Header>
+          
           <Routes>   
             <Route path='/' element={<HomePage setShowLogin={setShowLogin}/>} />
             <Route path='/about' element={<About setShowLogin={setShowLogin}/>} />
